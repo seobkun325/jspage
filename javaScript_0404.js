@@ -52,13 +52,16 @@
    * 
    * 4. 날짜
    *  new Date()
-   * 
+   *
    * 5. 정규표현식(RegExp)
    *  /[a-zA-Z]+/g
+   * 
    * 6. Error
    *  new Error('something went wrong')
+   * 
    * 7. 내장 객체
    *  Math.random(), Number.parseInt('10')
+   * 
    * 8. 전역 객체
    *  globalThis (브라우저), globalThis(Node.js)
    */
@@ -70,43 +73,43 @@
     cheeseBread: "치즈빵"
     };
 
-  // Object.entries()
-    const bakeryEntries = Object.entries(bakery);
-    console.log("Object.entries():", bakeryEntries);
-    //  출력: Object.entries(): [ [ 'saltBread', '소금빵' ], [ 'chocoBread', '초코빵' ], [ 'cheeseBread', '치즈빵' ] ]
+    // Object.entries()
+      const bakeryEntries = Object.entries(bakery);
+      console.log("Object.entries():", bakeryEntries);
+      //  출력: Object.entries(): [ [ 'saltBread', '소금빵' ], [ 'chocoBread', '초코빵' ], [ 'cheeseBread', '치즈빵' ] ]
 
-  // Object.keys()
-    const bakeryKeys = Object.keys(bakery);
-    console.log("Object.keys():", bakeryKeys);
-    // 출력: Object.keys(): [ 'saltBread', 'chocoBread', 'cheeseBread' ]
+    // Object.keys()
+      const bakeryKeys = Object.keys(bakery);
+      console.log("Object.keys():", bakeryKeys);
+      // 출력: Object.keys(): [ 'saltBread', 'chocoBread', 'cheeseBread' ]
 
-  // Object.values()
-    const bakeryValues = Object.values(bakery);
-    console.log("Object.values():", bakeryValues);
-    // 출력: Object.values(): [ '소금빵', '초코빵', '치즈빵' ]
+    // Object.values()
+      const bakeryValues = Object.values(bakery);
+      console.log("Object.values():", bakeryValues);
+      // 출력: Object.values(): [ '소금빵', '초코빵', '치즈빵' ]
 
-  // Object.freeze()
-  Object.freeze(bakery);
-    bakery.cheeseBread = "Baguettes"; // 변경이 적용되지 않음
-    console.log("Object.freeze():", bakery);
-    // 출력: Object.freeze(): { saltBread: '소금빵', chocoBread: '초코빵', cheeseBread: '치즈빵' }
+    // Object.freeze()
+    Object.freeze(bakery);
+      bakery.cheeseBread = "Baguettes"; // 변경이 적용되지 않음
+      console.log("Object.freeze():", bakery);
+      // 출력: Object.freeze(): { saltBread: '소금빵', chocoBread: '초코빵', cheeseBread: '치즈빵' }
 
-  // Object.seal()
-    Object.seal(bakery);
-    bakery.chocoBread = "456 Bread Avenue"; // 변경이 허용됨
-    console.log("Object.seal():", bakery);
-    // 출력: Object.seal(): { saltBread: '소금빵', chocoBread: '456 Bread Avenue', cheeseBread: '치즈빵' }
+    // Object.seal()
+      Object.seal(bakery);
+      bakery.chocoBread = "456 Bread Avenue"; // 변경이 허용됨
+      console.log("Object.seal():", bakery);
+      // 출력: Object.seal(): { saltBread: '소금빵', chocoBread: '456 Bread Avenue', cheeseBread: '치즈빵' }
 
-  // Object.is()
-    console.log("Object.is(10, 10):", Object.is(10, 10));     // true
-    console.log("Object.is(10, '10'):", Object.is(10, '10')); // false
+    // Object.is()
+      console.log("Object.is(10, 10):", Object.is(10, 10));     // true
+      console.log("Object.is(10, '10'):", Object.is(10, '10')); // false
 
-  // Object.assign()
-    const target = { a: 1, b: 2 };
-    const source = { b: 3, c: 4 };
-    const mergedObject = Object.assign({}, target, source);
-    console.log("Object.assign():", mergedObject);
-    // 출력: Object.assign(): { a: 1, b: 3, c: 4 }
+    // Object.assign()
+      const target = { a: 1, b: 2 };
+      const source = { b: 3, c: 4 };
+      const mergedObject = Object.assign({}, target, source);
+      console.log("Object.assign():", mergedObject);
+      // 출력: Object.assign(): { a: 1, b: 3, c: 4 }
 
 
 // 3. function
@@ -203,3 +206,12 @@
     } else {
         console.log('Unknown fruit');
     }
+
+    // 자료형
+    /**
+     * 자료형 종류 :Number, String, Boolean, Symbol, Undefined, Null, Object, Function, Array, Date, RegExp
+     * 복합 타입 : object, function, array
+     * 문자열(String) : 큰 따옴표, 작은 따옴표, 백틱
+     * 타입체크(typeof) : 타입 확인, 타입 변환
+     * 객체
+     */
