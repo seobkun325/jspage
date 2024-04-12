@@ -1,1 +1,2 @@
-document.getElementsByClassName('d')[0].style.color = 'yellow';
+import './style.css'
+import './script/openapi.js'
